@@ -1,0 +1,8 @@
+.section__buttons {
+  display: flex;
+  gap: 46px;
+}
+
+.section__buttons button {
+  width: 170px;
+}

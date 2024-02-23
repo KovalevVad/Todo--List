@@ -1,0 +1,53 @@
+:root {
+  --grey: #8b8787;
+}
+
+.addTask {
+  height: calc(100vh - 74px);
+}
+
+.headerAddTask {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.headerAddTask > a {
+  margin-left: 26px;
+}
+
+.button__addTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 386px;
+  height: 65px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--purple);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 54px;
+  cursor: pointer;
+}
+
+.main__addTask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title,
+.detail {
+  width: 356px;
+  height: 29px;
+  border-bottom: 1px solid var(--grey);
+  margin-top: 43px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+

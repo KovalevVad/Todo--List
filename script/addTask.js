@@ -14,12 +14,11 @@ form.addEventListener('submit', function(event) {
   arrayValue.forEach(function() {
     task.title = arrayValue[0].value
     task.detail = arrayValue[1].value
-
   })
   localStorage.setItem(`task${localStorage.length}`, JSON.stringify(task))
 
-  console.log(localStorage)
-
+  arrayValue[0].value = ''
+  arrayValue[1].value = ''
 });
 
 

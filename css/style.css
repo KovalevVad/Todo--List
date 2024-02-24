@@ -77,6 +77,10 @@ h2 {
   margin-right: 25px;
 }
 
+.case__icons > img {
+  cursor: pointer;
+}
+
 .add__case {
   display: flex;
   justify-content: center;

@@ -2,7 +2,6 @@ let main = document.querySelector('.main__cases')
 
 function deleteLocaleStorage(id) {
   localStorage.removeItem(`${id}`)
-  updateTask()
 }
 
 function updateTask() {

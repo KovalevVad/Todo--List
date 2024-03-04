@@ -16,8 +16,9 @@
   </header>
   <main class="addTask">
       <form action="" class="main__addTask" method="post">
-        <input name='title' type="text" class="title" placeholder="Title">
-        <input name='detail' type="text" class="detail" placeholder="Detail">
+        <input name='title' type="text" maxlength="50" class="title" placeholder="Title">
+        <input name='detail' type="text" maxlength="60" class="detail" placeholder="Detail">
+        <input name='date' type="date" class="date" placeholder="26.03.2024">
         <button type="submit" class="button__addTask">Add</button>
       </form>
   </main>

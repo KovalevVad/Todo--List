@@ -29,7 +29,8 @@ header > a {
 main {
   background-color: var(--purple-background);
   width: 100%;
-  height: calc(100vh - 142px);
+  height: auto;
+  min-height: calc(100vh - 142px);
   position: relative;
 }
 
@@ -71,13 +72,22 @@ h2 {
   color: #000;
 }
 
+.case__title > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.case__title p {
+  margin-left: 10px;
+}
+
 .case__icons {
   display: flex;
   gap: 20px;
   margin-right: 25px;
 }
 
-.case__icons > img {
+.case__icons > button {
   cursor: pointer;
 }
 
@@ -107,6 +117,7 @@ footer {
 footer div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 footer span {
@@ -117,7 +128,12 @@ footer span {
 }
 
 @media screen and (max-width: 414px) {
+  :root {
+    font-size: 70%;
+  }
+
   .case {
     width: 400px;
   }
+
 }

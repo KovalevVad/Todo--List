@@ -1,8 +1,8 @@
-.section__buttons {
+.form__buttons {
   display: flex;
   gap: 46px;
 }
 
-.section__buttons button {
+.form__buttons button {
   width: 170px;
 }

@@ -16,16 +16,16 @@
     <h1>Edit Task</h1>
   </header>
   <main class="addTask">
-    <section class="main__addTask">
-      <div class="title"><span>Title</span></div>
-      <div class="detail"><span>Detail</span></div>
-      <div class="section__buttons">
-        <form action=""><button type="button" class="button__addTask">Update</button></form>
-        <form action=""><button type="button" class="button__addTask">Cansel</button></form>
+    <form action="" class="main__addTask" method="post">
+      <input name='title' type="text" class="title" placeholder="Title">
+      <input name='detail' type="text" class="detail" placeholder="Detail">
+      <div class="form__buttons">
+        <button type="submit" class="button__addTask" id="update">Update</button>
+        <button type="button" class="button__addTask" id="cansel">Cansel</button>
       </div>
-    </section>
+    </form>
   </main>
-  <script src="/script/app.js" defer></script>
+  <script src="/script/editTask.js" defer></script>
 </body>
 </html>
 

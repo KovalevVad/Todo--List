@@ -1,5 +1,6 @@
-let main = document.querySelector('.main__cases')
-const arrayTask = JSON.parse(localStorage.getItem('tasks'))
+let main = document.querySelector('.main__cases');
+const arrayTask = JSON.parse(localStorage.getItem('tasks'));
+let getCompleted = localStorage.getItem('completed');
 
 function deleteLocaleStorage(id) {
   arrayTask.splice(id, 1)
@@ -9,8 +10,8 @@ function deleteLocaleStorage(id) {
 }
 
 let arrayCompleted = new Array()
-if (localStorage.getItem('completed') !== null) {
-  arrayCompleted = JSON.parse(localStorage.getItem('completed'))
+if (getCompleted !== null) {
+  arrayCompleted = JSON.parse(getCompleted)
 }
 
 function completedTask(id) {

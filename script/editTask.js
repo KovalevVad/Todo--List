@@ -1,5 +1,5 @@
 const updateButton = document.querySelector('#update')
-const canselButton = document.querySelector('#cansel')
+const cancelButton = document.querySelector('#cansel')
 const titleInput = document.querySelector('.title');
 const detailInput = document.querySelector('.detail');
 const form = document.querySelector('.main__addTask');
@@ -39,7 +39,7 @@ function getEditTask() {
   localStorage.setItem('tasks', JSON.stringify(arrayTask))
 }
 
-canselButton.onclick = function() {
+cancelButton.onclick = function() {
   titleInput.value = ''
   detailInput.value = ''
 }

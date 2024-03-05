@@ -1,12 +1,13 @@
 const addButton = document.querySelector('.button__addTask');
 const form = document.querySelector('.main__addTask');
+let getTask = localStorage.getItem('tasks');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   let elements = form.elements
   let arrayTask = new Array()
-  if (localStorage.getItem('tasks') !== null) {
-    arrayTask = JSON.parse(localStorage.getItem('tasks'))
+  if (getTask !== null) {
+    arrayTask = JSON.parse(getTask)
   }
 
   const arrayValue = Array.from(elements).filter((item) => !!item.name)

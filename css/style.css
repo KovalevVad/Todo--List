@@ -2,6 +2,9 @@
   --font-family: "Jost", sans-serif;
   --purple: #9395D3;
   --purple-background: #D6D7EF;
+  --white: #fff;
+  --black: #000;
+  --grey: #8b8787;
   font-size: 90%;
 }
 
@@ -18,7 +21,7 @@ h1 {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 2.4rem;
-  color: #fff;
+  color: var(--white);
   margin-left: 20px;
 }
 
@@ -46,7 +49,7 @@ main {
   align-items: center;
   width: 70%;
   height: 82px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
   margin-top: 21px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -69,7 +72,7 @@ h2 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 1rem;
-  color: #000;
+  color: var(--black);
 }
 
 .case__title > div:first-child {
@@ -111,7 +114,7 @@ footer {
   gap: 100px;
   width: 100%;
   height: 68px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 footer div {
